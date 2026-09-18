@@ -709,6 +709,39 @@ h3 {
   margin-top: 0.8rem;
 }
 
+.contact-details {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.3rem;
+}
+
+.contact-details a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: fit-content;
+  color: var(--text);
+}
+
+.contact-details a:hover,
+.contact-details a:focus-visible {
+  color: var(--primary-deep);
+}
+
+.contact-flag {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 12px;
+  background: var(--highlight);
+  font-size: 1.25rem;
+}
+
+.contact-details strong {
+  color: var(--primary-deep);
+}
+
 .contact-form {
   display: grid;
   gap: 1rem;
