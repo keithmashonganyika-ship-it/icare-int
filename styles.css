@@ -803,6 +803,51 @@ h3 {
   font-size: 1.1rem;
 }
 
+.donation-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.donation-copy h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: -0.05em;
+}
+
+.donation-list {
+  margin: 1.5rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.donation-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 14px 32px rgba(26, 39, 36, 0.04);
+}
+
+.donation-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.donation-card p {
+  margin-bottom: 1rem;
+}
+
+.donation-btn {
+  margin-top: 0.6rem;
+}
+
+.small-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
 .site-footer {
   padding: 1.5rem 0 2rem;
   color: var(--muted);

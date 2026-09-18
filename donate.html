@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Explore the iCare photo gallery and community moments from our mental health awareness work and youth support initiatives."
-    />
-    <title>Gallery | iCare</title>
+    <meta name="description" content="Support iCare with a secure online donation using Stripe." />
+    <title>Donate | iCare</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="gallery-page">
+  <body>
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="index.html" class="brand" aria-label="iCare home">
@@ -22,9 +19,9 @@
         <nav class="main-nav" id="main-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="gallery.html" class="active">Gallery</a>
-          <a href="donate.html">Donate</a>
+          <a href="gallery.html">Gallery</a>
           <a href="resources.html">Resources</a>
+          <a href="donate.html" class="active">Donate</a>
           <a href="contact.html">Contact</a>
           <a href="https://www.instagram.com/icare_int?stkn=cmU0aDU4Ynk5eHl6&utm_source=qr" target="_blank" rel="noreferrer">Instagram</a>
         </nav>
@@ -40,17 +37,32 @@
     <main>
       <section class="page-hero section">
         <div class="container narrow-copy center-text">
-          <p class="eyebrow">iCare gallery</p>
-          <h1>Our community in moments of care, courage, and healing.</h1>
+          <p class="eyebrow">Support iCare</p>
+          <h1>Help us continue creating safe spaces for healing and growth.</h1>
           <p class="lead">
-            These images reflect the real stories behind our work — conversations, community support, youth empowerment, and a shared commitment to making wellbeing feel more human and accessible.
+            Your donation helps fund awareness campaigns, support programmes, community outreach, and practical care for young people, families, and communities in need.
           </p>
         </div>
       </section>
 
       <section class="section section-soft">
-        <div class="container">
-          <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+        <div class="container donation-layout">
+          <div class="donation-copy">
+            <p class="eyebrow">Why your support matters</p>
+            <h2>Every contribution helps us move from conversations to action.</h2>
+            <ul class="donation-list">
+              <li>Support youth-led mental health awareness programmes</li>
+              <li>Fund community outreach and safe-space conversations</li>
+              <li>Help provide emotional, practical, and social support</li>
+            </ul>
+          </div>
+
+          <div class="donation-card">
+            <h3>Make a donation</h3>
+            <p>Secure card payments are processed through Stripe.</p>
+            <a id="donate-button" class="btn btn-primary donation-btn" href="https://buy.stripe.com/your_live_link_here" target="_blank" rel="noreferrer">Donate with card</a>
+            <p class="small-note">Replace the sample Stripe link with your live Stripe payment link in script.js or this page before going live.</p>
+          </div>
         </div>
       </section>
     </main>
