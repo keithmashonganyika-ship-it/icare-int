@@ -307,6 +307,21 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.profile-card {
+  display: grid;
+  place-items: center;
+  padding: 1.4rem 1rem 1rem;
+}
+
+.profile-badge {
+  display: block;
+  width: min(320px, 70%);
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 16px rgba(33, 61, 53, 0.12));
+}
+
 .card-main {
   width: min(420px, 92%);
   padding: 2.1rem 1.7rem;

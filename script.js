@@ -1,30 +1,30 @@
 const instagramHighlights = [
   {
     image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80',
-    title: 'Mental health check-in',
-    tag: 'Daily reminder',
-    description: 'Short prompts that help young people pause, reflect, and honest-check how they are feeling.',
+    title: 'Mental Health Awareness',
+    tag: 'Focus Area',
+    description: 'To promote mental wellness, reduce stigma, and provide support for individuals struggling with mental health issues.',
     url: 'https://www.instagram.com/icare_int?stkn=cmU0aDU4Ynk5eHl6&utm_source=qr'
   },
   {
     image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80',
-    title: 'Stress survival tips',
-    tag: 'Resource',
-    description: 'Simple strategies to manage pressure, burnout, and overthinking in everyday life.',
+    title: 'GBV Prevention',
+    tag: 'Awareness',
+    description: 'To educate and empower individuals to prevent gender-based violence and support survivors.',
     url: 'https://www.instagram.com/icare_int?stkn=cmU0aDU4Ynk5eHl6&utm_source=qr'
   },
   {
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
-    title: 'Break the stigma',
-    tag: 'Awareness',
-    description: 'Stories and education that make talking about mental health feel less intimidating.',
+    title: 'Addiction Support',
+    tag: 'Support',
+    description: 'To provide resources and support for individuals struggling with addiction and promote healthy coping mechanisms.',
     url: 'https://www.instagram.com/icare_int?stkn=cmU0aDU4Ynk5eHl6&utm_source=qr'
   },
   {
     image: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80',
-    title: 'Safe spaces',
+    title: 'Youth Empowerment',
     tag: 'Community',
-    description: 'Encouraging reminders that support, connection, and rest are all part of healing.',
+    description: 'To promote equality, challenge societal norms, and empower both boys and girls to reach their full potential.',
     url: 'https://www.instagram.com/icare_int?stkn=cmU0aDU4Ynk5eHl6&utm_source=qr'
   }
 ];
