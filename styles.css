@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
   font-family: "Manrope", sans-serif;
   background: var(--bg);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 img {
@@ -35,6 +37,7 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 p {
@@ -91,8 +94,11 @@ h3 {
   display: none;
   background: transparent;
   border: 0;
-  padding: 0.25rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .nav-toggle span {
@@ -153,6 +159,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 44px;
   padding: 0.9rem 1.35rem;
   border-radius: 999px;
   font-weight: 700;
@@ -1052,12 +1059,51 @@ h3 {
 }
 
 @media (max-width: 640px) {
+  .container {
+    width: min(100% - 1.5rem, 1120px);
+  }
+
+  .site-header {
+    position: sticky;
+  }
+
   .hero {
-    padding-top: 3rem;
+    padding: 3.25rem 0 2rem;
   }
 
   .nav-wrap {
-    padding: 0.8rem 0;
+    min-height: 72px;
+    padding: 0.45rem 0;
+  }
+
+  .brand {
+    min-width: 0;
+    max-width: calc(100% - 56px);
+    justify-content: flex-start;
+  }
+
+  .brand-logo {
+    width: min(170px, 58vw);
+    max-height: 64px;
+  }
+
+  .main-nav {
+    top: 72px;
+    gap: 0.25rem;
+    padding: 0.75rem;
+  }
+
+  .main-nav a {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.65rem 0.75rem;
+    border-radius: 12px;
+  }
+
+  .main-nav a:hover,
+  .main-nav a:focus-visible,
+  .main-nav a.active {
+    background: var(--highlight);
   }
 
   .btn {
@@ -1065,24 +1111,153 @@ h3 {
   }
 
   .hero-actions,
-  .contact-actions {
+  .contact-actions,
+  .support-actions {
     display: grid;
+    gap: 0.75rem;
   }
 
   .mini-stats {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 
   .section {
-    padding: 4.5rem 0;
+    padding: 3.75rem 0;
+  }
+
+  .page-hero {
+    padding-top: 3.25rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .page-hero h1,
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 12vw, 3.6rem);
+    text-wrap: balance;
+  }
+
+  .section-heading h2,
+  .support-band h2,
+  .social-panel h2,
+  .donation-copy h2 {
+    text-wrap: balance;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+    margin-top: 1rem;
+  }
+
+  .bubble-one {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bubble-two {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-main {
+    width: min(100%, 360px);
+    padding: 1.5rem 1rem;
+  }
+
+  .card-main h2 {
+    font-size: 1.6rem;
+  }
+
+  .profile-badge {
+    width: min(250px, 76%);
+    max-height: 170px;
+  }
+
+  .card-floating {
+    right: 0;
+    bottom: 2%;
+    max-width: 175px;
+    padding: 0.8rem 0.9rem;
+    font-size: 0.86rem;
+  }
+
+  .signal {
+    gap: 0.75rem;
+  }
+
+  .signal span {
+    font-size: 0.86rem;
+  }
+
+  .instagram-card img {
+    height: 240px;
+  }
+
+  .editorial-feature img {
+    height: 240px;
+  }
+
+  .contact-box,
+  .support-band-inner,
+  .social-panel,
+  .donation-card {
+    padding: 1.35rem 1rem;
+    border-radius: 22px;
+  }
+
+  .contact-details a {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .social-links-large {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .social-links-large a {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    gap: 1rem;
+  }
+
+  .gallery-item img {
+    height: 250px;
   }
 
   .site-footer .footer-wrap {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1.25rem;
   }
 
   .social-links {
     justify-content: flex-start;
+    width: 100%;
+  }
+
+  .footer-wrap .social-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-wrap .social-links a {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
