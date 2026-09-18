@@ -839,8 +839,27 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.payment-options {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
 .donation-btn {
-  margin-top: 0.6rem;
+  margin-top: 0.1rem;
+}
+
+.payment-details {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.payment-details p {
+  margin: 0 0 0.7rem;
 }
 
 .small-note {

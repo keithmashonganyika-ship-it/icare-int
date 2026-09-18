@@ -59,9 +59,18 @@
 
           <div class="donation-card">
             <h3>Make a donation</h3>
-            <p>Secure card payments are processed through Stripe.</p>
-            <a id="donate-button" class="btn btn-primary donation-btn" href="https://buy.stripe.com/your_live_link_here" target="_blank" rel="noreferrer">Donate with card</a>
-            <p class="small-note">Replace the sample Stripe link with your live Stripe payment link in script.js or this page before going live.</p>
+            <p>Choose a payment option below. Card payments are connected to Stripe when your live link is added.</p>
+
+            <div class="payment-options">
+              <a id="donate-button" class="btn btn-primary donation-btn" href="https://buy.stripe.com/your_live_link_here" target="_blank" rel="noreferrer">Donate with card</a>
+              <a class="btn btn-secondary donation-btn" href="mailto:hello@icare.com?subject=Bank%20Transfer%20Donation">Bank transfer</a>
+              <a class="btn btn-secondary donation-btn" href="https://wa.me/27700000000" target="_blank" rel="noreferrer">WhatsApp support</a>
+            </div>
+
+            <div class="payment-details">
+              <p><strong>Bank transfer:</strong> Add your bank name, account holder name, and account number here when ready.</p>
+              <p><strong>Note:</strong> The card payment button is ready for your live Stripe link and will work as soon as it is connected.</p>
+            </div>
           </div>
         </div>
       </section>

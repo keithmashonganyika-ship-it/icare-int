@@ -1,5 +1,11 @@
 const stripePaymentLink = 'https://buy.stripe.com/your_live_link_here';
 
+const donateButton = document.getElementById('donate-button');
+
+if (donateButton) {
+  donateButton.href = stripePaymentLink;
+}
+
 const instagramHighlights = [
   {
     image: 'gallery/444533f6-07a3-496b-be11-adcc63a72e7a-WhatsApp Image 2026-09-18 at 11.58.21 (1).jpeg',
