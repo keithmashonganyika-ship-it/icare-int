@@ -957,6 +957,37 @@ h3 {
   font-size: 0.75rem;
 }
 
+.social-section {
+  padding-top: 0;
+}
+
+.social-panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 28px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+}
+
+.social-panel h2 {
+  margin-bottom: 0.6rem;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  letter-spacing: -0.05em;
+}
+
+.social-links-large {
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.social-links-large a {
+  background: white;
+  padding-right: 0.75rem;
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .split-layout,
@@ -970,6 +1001,10 @@ h3 {
   .support-band-inner {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .social-panel {
+    grid-template-columns: 1fr;
   }
 
   .brand-logo {
