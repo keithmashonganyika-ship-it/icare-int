@@ -227,6 +227,18 @@ if (contactForm) {
   });
 }
 
+const anonymousForm = document.getElementById('anonymous-form');
+const anonymousSuccess = document.getElementById('anonymous-success');
+
+if (anonymousForm && anonymousSuccess) {
+  anonymousForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    anonymousForm.reset();
+    anonymousSuccess.hidden = false;
+    anonymousSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+}
+
 const navToggle = document.getElementById('nav-toggle');
 const mainNav = document.getElementById('main-nav');
 

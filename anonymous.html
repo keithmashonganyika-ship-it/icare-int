@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Share anonymous feedback to help iCare understand what our community needs." />
+    <title>Share Anonymously | iCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="iCare home">
+          <img src="icare-logo.png" alt="iCare logo" class="brand-logo" />
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="donate.html">Donate</a>
+          <a href="anonymous.html" class="active">Share anonymously</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.instagram.com/icare_int?stkn=cmU0aDU4Ynk5eHl6&utm_source=qr" target="_blank" rel="noreferrer">Instagram</a>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="btn btn-primary desktop-cta" href="donate.html">Support iCare</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero section">
+        <div class="container narrow-copy">
+          <p class="eyebrow">Share anonymously</p>
+          <h1>Help us understand what our community needs.</h1>
+          <p class="lead">This form is anonymous — we don't ask for your name or contact details. Your answers help iCare shape better support around mental health, GBV prevention, addiction, youth empowerment, and care for the elderly and special communities.</p>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container survey-wrap">
+          <div class="crisis-notice" role="note">
+            <strong>If you're in immediate danger or crisis:</strong>
+            <p>Please contact a local emergency service or crisis line right away. Because this form is anonymous, we cannot reach you directly or respond in real time.</p>
+          </div>
+
+          <form id="anonymous-form" class="survey-form">
+            <fieldset>
+              <legend>1. Which age group do you fall into?</legend>
+              <select name="age_group" required>
+                <option value="">Select one</option>
+                <option>Under 13</option>
+                <option>13–17</option>
+                <option>18–24</option>
+                <option>25–34</option>
+                <option>35–59</option>
+                <option>60 and above</option>
+                <option>Prefer not to say</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>2. Which of our focus areas affects you or someone close to you most right now? <span>(select all that apply)</span></legend>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" name="focus_area" value="Mental health" /> Mental health</label>
+                <label><input type="checkbox" name="focus_area" value="Gender-based violence" /> Gender-based violence</label>
+                <label><input type="checkbox" name="focus_area" value="Addiction" /> Addiction</label>
+                <label><input type="checkbox" name="focus_area" value="Boychild / girlchild empowerment" /> Boychild / girlchild empowerment</label>
+                <label><input type="checkbox" name="focus_area" value="Elderly / special communities support" /> Elderly / special communities support</label>
+                <label><input type="checkbox" name="focus_area" value="None of these apply to me" /> None of these apply to me</label>
+              </div>
+            </fieldset>
+
+            <label class="survey-question">3. What's the biggest mental health challenge you see in your community?
+              <textarea name="mental_health_challenge" rows="4"></textarea>
+            </label>
+
+            <label class="survey-question">4. Do you feel there is enough awareness about gender-based violence where you live?
+              <select name="gbv_awareness" required>
+                <option value="">Select one</option>
+                <option>Yes, quite a lot</option>
+                <option>Somewhat, but more is needed</option>
+                <option>No, very little</option>
+                <option>Not sure</option>
+              </select>
+            </label>
+
+            <label class="survey-question">5. What would help a survivor of gender-based violence feel safe enough to seek support?
+              <textarea name="gbv_support" rows="4"></textarea>
+            </label>
+
+            <fieldset>
+              <legend>6. What kind of support do you think helps most with addiction recovery?</legend>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" name="addiction_support" value="Counseling / therapy" /> Counseling / therapy</label>
+                <label><input type="checkbox" name="addiction_support" value="Peer support groups" /> Peer support groups</label>
+                <label><input type="checkbox" name="addiction_support" value="Family involvement" /> Family involvement</label>
+                <label><input type="checkbox" name="addiction_support" value="Education / awareness programs" /> Education / awareness programs</label>
+                <label><input type="checkbox" name="addiction_support" value="Not sure" /> Not sure</label>
+              </div>
+            </fieldset>
+
+            <label class="survey-question">7. In your community, do boys and girls generally have equal opportunities?
+              <select name="equal_opportunities" required>
+                <option value="">Select one</option>
+                <option>Yes, mostly equal</option>
+                <option>Somewhat, but gaps remain</option>
+                <option>No, there are big gaps</option>
+                <option>Not sure</option>
+              </select>
+            </label>
+
+            <label class="survey-question">8. What's one challenge you think elderly people or special communities face where you live?
+              <textarea name="community_challenge" rows="4"></textarea>
+            </label>
+
+            <fieldset>
+              <legend>9. What type of resources would be most useful to you or your community?</legend>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" name="resources" value="Workshops / training" /> Workshops / training</label>
+                <label><input type="checkbox" name="resources" value="One-on-one counseling" /> One-on-one counseling</label>
+                <label><input type="checkbox" name="resources" value="Helplines / hotlines" /> Helplines / hotlines</label>
+                <label><input type="checkbox" name="resources" value="Peer support groups" /> Peer support groups</label>
+                <label><input type="checkbox" name="resources" value="Online articles / social media content" /> Online articles / social media content</label>
+              </div>
+            </fieldset>
+
+            <label class="survey-question">10. Have you or someone you know ever reached out for help with any of the issues above?
+              <select name="reached_out" required>
+                <option value="">Select one</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>Prefer not to say</option>
+              </select>
+            </label>
+
+            <label class="survey-question">11. What would make it easier for someone to reach out for support?
+              <textarea name="reach_out_barrier" rows="4"></textarea>
+            </label>
+
+            <label class="survey-question">12. Anything else you'd like to share with us, anonymously?
+              <span class="field-help">Please avoid including your name, phone number, or anything that could identify you.</span>
+              <textarea name="additional_feedback" rows="5"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary submit-btn">Submit anonymously</button>
+            <p class="privacy-note">We don't collect names, emails, or identifying info through this form. This website form is currently a private front-end prototype and does not transmit responses until a secure survey service is connected.</p>
+            <p id="anonymous-success" class="form-success" role="status" hidden>Thank you for sharing. Your responses were cleared from this page. iCare must connect a secure survey service before responses can be received for planning.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 iCare. Youth-led mental health support.</p>
+        <a href="contact.html">Contact iCare</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

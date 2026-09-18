@@ -907,6 +907,131 @@ h3 {
   color: var(--muted);
 }
 
+.survey-wrap {
+  max-width: 840px;
+}
+
+.crisis-notice {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.35rem;
+  border-left: 4px solid var(--primary);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(76, 29, 149, 0.06);
+}
+
+.crisis-notice strong {
+  color: var(--primary-deep);
+}
+
+.crisis-notice p {
+  margin-top: 0.35rem;
+}
+
+.survey-form {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 18px 38px rgba(76, 29, 149, 0.07);
+}
+
+.survey-form fieldset,
+.survey-question {
+  display: grid;
+  gap: 0.65rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.survey-form legend {
+  width: 100%;
+  margin-bottom: 0.65rem;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.survey-form legend span,
+.field-help {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.survey-form select,
+.survey-form textarea {
+  width: 100%;
+  border: 1px solid rgba(76, 29, 149, 0.16);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+
+.survey-form select {
+  min-height: 48px;
+}
+
+.survey-form textarea {
+  resize: vertical;
+}
+
+.survey-form select:focus,
+.survey-form textarea:focus {
+  outline: 2px solid rgba(139, 92, 246, 0.28);
+  border-color: rgba(139, 92, 246, 0.58);
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.checkbox-grid label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkbox-grid input {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: 0 0 auto;
+  accent-color: var(--primary);
+}
+
+.privacy-note,
+.form-success {
+  font-size: 0.86rem;
+}
+
+.form-success {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  background: var(--highlight);
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
 .site-footer {
   padding: 1.5rem 0 2rem;
   color: var(--muted);
@@ -1225,6 +1350,14 @@ h3 {
 
   .gallery-item img {
     height: 250px;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .survey-form {
+    border-radius: 22px;
   }
 
   .site-footer .footer-wrap {
